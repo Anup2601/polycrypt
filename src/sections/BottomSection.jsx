@@ -10,32 +10,45 @@ const BottomSection = () => {
   ];
 
   return (
-    <section className="relative w-full sm:min-h-screen text-white py-20 md:py-28 px-4 sm:px-8 md:px-16 overflow-hidden flex items-center justify-center">
-      {/* Glow background */}
-      {/* <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-[radial-gradient(circle_at_top_left,_rgba(12,202,237,0.25),_transparent_60%)] blur-[200px] pointer-events-none" /> */}
+    <section className="relative w-full sm:min-h-screen text-white overflow-hidden flex items-center justify-center ">
+      {/* Multiple glow effects */}
+      <div className="hidden md:block">
+        <div className="absolute top-1.5/4 left-3/9 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px] pointer-events-none" />
+        <div className="absolute top-4/9 right-3/8 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px] pointer-events-none" />
+        <div className="absolute top-4/8 right-2/9 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px] pointer-events-none" />
+        <div className="absolute bottom-2/9 left-9/11 w-[150px] h-[150px] bg-blue-500/80 rounded-full blur-[30px] pointer-events-none" />
+      </div>
 
       {/* Content container */}
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-16 md:gap-12 sm:mr-64 mr-0">
+      <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-center md:mr-32">
         {/* Vertical Heading */}
         <h2
           className={`text-5xl md:text-8xl font-extrabold uppercase text-transparent 
-            rotate-0 md:-rotate-90 text-center md:text-center leading-tight
-            [text-shadow:0_0_10px_rgba(12,202,237,0.6),0_0_20px_rgba(12,202,237,0.5),0_0_40px_rgba(12,202,237,0.4)]
+            rotate-0 md:-rotate-90 text-center md:text-center leading-tight mb-8 md:mb-0
+            [text-shadow:0_0_10px_rgba(12,202,237,0.3),0_0_20px_rgba(12,202,237,0.3),0_0_40px_rgba(12,202,237,0.3)]
             [-webkit-text-stroke:2px_white]`}
         >
           WHY <br /> POLYCRYPT
         </h2>
 
         {/* Hexagon Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:flex md:flex-row gap-8 md:gap-14 justify-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 xl:gap-16 items-center justify-items-center">
           {features.map((item, idx) => (
             <div
               key={idx}
-              className="relative w-32 h-36 sm:w-36 sm:h-40 md:w-40 md:h-44 flex items-center justify-center text-center text-sm sm:text-base font-bold"
+              className={`relative w-28 h-32 sm:w-36 sm:h-40 lg:w-48 lg:h-52 flex items-center justify-center text-center transition-all duration-400 brightness-120 hover:scale-105 hover:brightness-135
+              ${idx % 2 === 1 ? "mt-10 sm:mt-0 md:mt-[12rem]" : "mt-0"}`}
             >
-              {/* Hexagon Shape */}
-              <div className="absolute inset-0 bg-[linear-gradient(145deg,_#0CCAED,_#098CAD)] clip-hexagon shadow-[0_0_25px_rgba(12,202,237,0.6)] transition-transform duration-300 hover:scale-105" />
-              <span className="relative z-10 px-3">{item.title}</span>
+              {/* Outer glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-blue-600 clip-hexagon blur-md opacity-70" />
+
+              {/* Inner highlight */}
+              <div className="absolute inset-2 bg-gradient-to-br from-cyan-300/20 to-transparent clip-hexagon" />
+
+              {/* Text */}
+              <span className="relative z-10 px-2 text-xs sm:text-sm lg:text-lg font-semibold leading-tight whitespace-pre-line text-center">
+                {item.title}
+              </span>
             </div>
           ))}
         </div>
@@ -46,11 +59,11 @@ const BottomSection = () => {
         .clip-hexagon {
           clip-path: polygon(
             50% 0%,
-            93% 25%,
-            93% 75%,
+            95% 25%,
+            95% 75%,
             50% 100%,
-            7% 75%,
-            7% 25%
+            5% 75%,
+            5% 25%
           );
         }
       `}</style>

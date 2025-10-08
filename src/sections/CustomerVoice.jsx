@@ -4,12 +4,12 @@ export default function CustomerVoices() {
   return (
     <section className="relative w-full text-white py-20 px-4 sm:px-6 md:px-10 overflow-hidden ">
 
-      <div className="relative z-10 max-w-7xl mx-auto ">
+      <div className="relative z-10 max-w-7xl mx-auto mb-50">
         {/* Heading */}
         <div className="mb-12 sm:mb-0">
           <h2
             className="text-5xl md:text-8xl font-extrabold uppercase text-transparent 
-           [text-shadow:0_0_10px_rgba(12,202,237,0.5),0_0_20px_rgba(12,202,237,0.5),0_0_40px_rgba(12,202,237,0.5)]
+           [text-shadow:0_0_10px_rgba(12,202,237,0.3),0_0_20px_rgba(12,202,237,0.3),0_0_40px_rgba(12,202,237,0.3)]
            [-webkit-text-stroke:2px_white]"
           >
             Customer <br/> Voices
