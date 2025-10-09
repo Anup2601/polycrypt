@@ -3,30 +3,30 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X } from "lucide-react"; // for hamburger icons
+import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#0A1F33] text-white py-4 px-6 shadow-md fixed top-0 left-0 z-50">
+    <nav className="w-full bg-[#0A1F33] text-white py-2 px-6 shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2 cursor-pointer">
-          <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/logo.svg"
-              alt="Polycrypt logo"
-              width={60}
-              height={60}
-              priority
-            />
-            <span className="text-xl font-bold">Polycrypt HQ</span>
-          </Link>
-        </div>
+        <Link href="/" className="flex items-center space-x-2">
+          <Image
+            src="/logo.svg"
+            alt="Polycrypt logo"
+            width={55}
+            height={55}
+            priority
+          />
+          <span className="text-lg sm:text-xl font-bold whitespace-nowrap">
+            Polycrypt HQ
+          </span>
+        </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center space-x-24">
+        <div className="hidden md:flex items-center space-x-10 lg:space-x-24">
           {["Home", "About Us", "Products"].map((label, index) => {
             const href =
               label === "Home"
@@ -36,7 +36,7 @@ export default function Navbar() {
               <Link
                 key={index}
                 href={href}
-                className="relative font-bold text-2xl hover:text-cyan-400 transition-colors group"
+                className="relative font-semibold text-lg lg:text-2xl hover:text-cyan-400 transition-colors group"
               >
                 {label}
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full" />
@@ -48,7 +48,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <Link
           href="/contact"
-          className="hidden md:inline-block ml-6 bg-white text-[#00B8F1] font-semibold px-6 py-3 rounded-md hover:scale-105 transition-all"
+          className="hidden md:inline-block ml-4 lg:ml-6 bg-white text-[#00B8F1] font-bold text-sm lg:text-base px-4 lg:px-6 py-2 lg:py-3 rounded-md hover:scale-105 transition-all whitespace-nowrap"
         >
           Contact Us
         </Link>

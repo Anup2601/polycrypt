@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <section className="relative w-full text-white py-20 px-4 sm:px-6 md:px-10 overflow-hidden min-h-screen">
+    <section className="relative w-full text-white px-4 sm:px-6 md:px-10 overflow-hidden ">
       {/* Radial gradient glow */}
       <div className="absolute top-0 left-0 w-[200px] h-[200px] bg-[radial-gradient(circle_at_top_left,_rgba(9,140,173,0.4),_transparent_50%)] blur-[300px] z-0 pointer-events-none" />
 
@@ -11,24 +11,24 @@ export default function OurStory() {
         src="/bg-texture.png"
         alt="Texture"
         fill
-        className="absolute top-0 left-0 w-full h-full pointer-events-none z-0"
+        className="absolute top-0 left-0 w-full h-screen pointer-events-none z-0"
         priority
       />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-7xl mx-auto sm:text-left text-center p-2">
         {/* Section Heading */}
         <div className="mb-12 max-w-xl">
           <h2
             className="text-5xl md:text-8xl font-extrabold uppercase text-transparent 
            my-12 mb-6
            [text-shadow:0_0_10px_rgba(12,202,237,0.5),0_0_20px_rgba(12,202,237,0.5),0_0_40px_rgba(12,202,237,0.5)]
-           [-webkit-text-stroke:2px_white]"
+           [-webkit-text-stroke:1px_white]"
           >
             OUR STORY
           </h2>
 
-          <p className="text-white mt-10  text-base sm:text-2xl font-semibold leading-relaxed">
+          <p className="text-white mt-6  text-base sm:text-2xl font-semibold leading-relaxed">
             Polycrypt HQ is a forward-thinking product company building
             innovative blockchain-powered solutions for businesses,
             institutions, and individuals.

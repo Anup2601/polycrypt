@@ -8,38 +8,39 @@ export default function ValuesSection() {
   return (
     <section className="relative w-full text-white overflow-hidden mb-16">
       {/* Title */}
-      <div className="md:flex md:justify-center md:items-center pl-4 pt-16">
+      <div className="flex justify-center items-center pt-16">
         <h1
-          className={`text-5xl md:text-8xl font-extrabold uppercase text-transparent
+          className={`text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold uppercase text-transparent text-center
           [text-shadow:0_0_10px_rgba(12,202,237,0.3),0_0_20px_rgba(12,202,237,0.3),0_0_40px_rgba(12,202,237,0.3)]
-          [-webkit-text-stroke:2px_white]`}
+          [-webkit-text-stroke:1px_white]`}
         >
           OUR Values
         </h1>
       </div>
 
       {/* Values Section */}
-      <div className="flex flex-col md:flex-row justify-center items-stretch mt-12 md:mt-16 relative mx-6 md:mx-24">
+      <div className="flex flex-col md:flex-row justify-center items-stretch mt-12 md:mt-16 mx-4 sm:mx-8 md:mx-16 lg:mx-24 gap-6">
         {/* Left Icon */}
-        <div className="flex items-center justify-center w-full md:w-1/4 sm:border-r-2 border-white rounded-full p-8 mb-8 md:mb-0 hover:scale-95">
-          <Image
-            src="/logo.svg"
-            alt="Polycrypt Icon"
-            width={200}
-            height={200}
-            className="object-contain"
-          />
+        <div className="flex items-center justify-center w-full md:w-1/4 border-b-2 md:border-b-0 md:border-r-2 border-white rounded-full p-4 sm:p-6 md:p-8 lg:p-10 hover:scale-95 transition-transform duration-300">
+          <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-64 lg:h-64">
+            <Image
+              src="/logo.svg"
+              alt="Polycrypt Icon"
+              fill
+              className="object-contain"
+              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 15vw"
+            />
+          </div>
         </div>
 
         {/* Values Cards */}
-        <div className="flex flex-col md:flex-row w-full md:w-3/4 gap-4">
+        <div className="flex flex-col sm:flex-row flex-wrap md:flex-nowrap w-full md:w-3/4 gap-4">
           {values.map((title, index) => (
             <div
               key={index}
-              className={`relative flex-1 flex items-center justify-center sm:border-r-2 border-white rounded-full h-40 md:h-[600px]
-              bg-[#041A2F] hover:scale-95`}
+              className={`relative flex-1 flex items-center justify-center border-b-2 sm:border-r-2 sm:border-b-0 border-white rounded-full h-32 sm:h-40 md:h-[600px] bg-[#041A2F] hover:scale-95 transition-transform duration-300 p-8 sm:p-0`}
             >
-              <span className="text-lg md:text-2xl font-bold tracking-wide text-center md:-rotate-90">
+              <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-wide text-center md:-rotate-90">
                 {title}
               </span>
             </div>
@@ -47,7 +48,7 @@ export default function ValuesSection() {
         </div>
       </div>
 
-      {/* Chevron Shape Definition (optional if you still want the effect) */}
+      {/* Chevron Shape Definition (if still needed) */}
       <style jsx>{`
         .before\\:clip-path-chevron::before {
           clip-path: polygon(100% 50%, 0% 0%, 0% 100%);

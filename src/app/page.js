@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import OurStory from "@/components/OurStory";
 import ValuesSection from "@/components/ValuesSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <ValuesSection />
       <BottomSection />
       <CustomerVoice />
+      <Footer/>
     </main>
   );
 }
