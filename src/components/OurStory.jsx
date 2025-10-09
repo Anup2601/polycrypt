@@ -11,7 +11,7 @@ export default function OurStory() {
         src="/bg-texture.png"
         alt="Texture"
         fill
-        className="absolute top-20 left-0 w-full h-screen pointer-events-none z-0"
+        className="absolute top-20 left-0 w-full h-screen pointer-events-none z-0 xl:mt-20 mt-40 md:mt-20 lg:mt-30"
         priority
       />
 
@@ -28,7 +28,7 @@ export default function OurStory() {
             OUR STORY
           </h2>
 
-          <p className="text-white mt-6 max-w-lg text-base sm:text-2xl font-semibold leading-relaxed">
+          <p className="text-white mt-6 max-w-lg text-base md:text-xl xl:text-2xl font-semibold leading-relaxed">
             Polycrypt HQ is a forward-thinking product company building
             innovative blockchain-powered solutions for businesses,
             institutions, and individuals.
@@ -40,10 +40,10 @@ export default function OurStory() {
           {/* Vision */}
           <div className="grid md:grid-cols-2 mb-16">
             <div></div>
-            <div className="flex flex-col gap-2 ">
-              <h2 className="text-4xl sm:text-6xl font-bold sm:mb-2">01</h2>
-              <h4 className="text-3xl sm:text-4xl font-bold sm:mb-2">Our Vision</h4>
-              <p className="text-white text-base font-semibold leading-relaxed sm:text-2xl">
+            <div className="flex flex-col gap-3 ">
+              <h2 className="text-4xl sm:text-6xl font-bold sm:mb-3">01</h2>
+              <h4 className="text-3xl sm:text-4xl font-bold sm:mb-3">Our Vision</h4>
+              <p className="text-white text-base font-semibold leading-relaxed md:text-xl xl:text-2xl">
                 To build a world where digital trust is universal, empowering
                 every individual and organization with secure, transparent, and
                 scalable blockchain solutions.
@@ -53,10 +53,10 @@ export default function OurStory() {
 
           {/* Mission */}
           <div className="grid md:grid-cols-2">
-            <div className="flex flex-col gap-2 ">
-              <h2 className="text-4xl sm:text-6xl font-bold sm:mb-2">02</h2>
-              <h4 className="text-3xl sm:text-4xl font-bold sm:mb-2">Our Mission</h4>
-              <p className="text-white font-semibold leading-relaxed text-base sm:text-2xl">
+            <div className="flex flex-col gap-3 ">
+              <h2 className="text-4xl sm:text-6xl font-bold sm:mb-3">02</h2>
+              <h4 className="text-3xl sm:text-4xl font-bold sm:mb-3">Our Mission</h4>
+              <p className="text-white font-semibold leading-relaxed text-base md:text-xl  xl:text-2xl">
                 Our mission is to empower organizations with next-generation
                 transparency and efficiency through blockchain technology.
               </p>

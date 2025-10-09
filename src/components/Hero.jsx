@@ -22,10 +22,10 @@ export default function Hero() {
       <div
         className={`
           relative z-20 px-4 sm:px-6 md:px-10 max-w-3xl mx-auto
-          flex flex-col items-center 
+          flex flex-col items-center pt-64
           text-white
           h-full
-          justify-start pt-32
+          sm:justify-start sm:pt-32
         `}
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">

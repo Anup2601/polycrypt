@@ -53,7 +53,7 @@ const BottomSection = () => {
               <div className="absolute inset-1 bg-gradient-to-br from-cyan-300/20 to-transparent clip-hexagon" />
 
               {/* Text */}
-              <span className="relative z-10 px-1 text-md sm:text-xl md:text-sm lg:text-2xl font-semibold leading-tight text-center break-words">
+              <span className="relative z-10 px-1 text-md sm:text-xl  lg:text-2xl font-semibold leading-tight text-center break-words">
                 {item.title === "Trust & Security"
                   ? (
                     <>

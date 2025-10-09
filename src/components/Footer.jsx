@@ -26,11 +26,11 @@ export default function Footer() {
         {/* Left: Logo */}
         <div className="flex items-center space-x-2 lg:space-x-3">
           <Image src="/logo.svg" alt="Polycrypt Logo" width={50} height={50} />
-          <span className="font-bold text-xl md:text-2xl">Polycrypt HQ</span>
+          <span className="font-bold text-lg lg:text-2xl">Polycrypt HQ</span>
         </div>
 
         {/* Center: Navigation Links */}
-        <div className="flex items-center space-x-10 text-base md:text-lg font-semibold">
+        <div className="flex items-center space-x-10 md:space-x-5 lg:space-x-10 text-base lg:text-lg font-semibold">
           <Link href="/" className="hover:text-cyan-400 transition">
             Home
           </Link>
