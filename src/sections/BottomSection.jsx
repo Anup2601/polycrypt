@@ -40,7 +40,7 @@ const BottomSection = () => {
           {features.map((item, idx) => (
             <div
               key={idx}
-              className={`relative w-20 h-24 sm:w-28 sm:h-32 md:w-36 md:h-40 lg:w-44 lg:h-48 
+              className={`relative w-24 h-28 sm:w-28 sm:h-32 md:w-36 md:h-40 lg:w-44 lg:h-48 
                 flex items-center justify-center text-center
                 transition-transform duration-300 hover:scale-105
                 ${idx % 2 === 1 ? "translate-y-0 sm:translate-y-8 md:translate-y-32" : ""}
@@ -53,8 +53,14 @@ const BottomSection = () => {
               <div className="absolute inset-1 bg-gradient-to-br from-cyan-300/20 to-transparent clip-hexagon" />
 
               {/* Text */}
-              <span className="relative z-10 px-1 text-[9px] sm:text-xs md:text-sm lg:text-xl font-semibold leading-tight text-center">
-                {item.title}
+              <span className="relative z-10 px-1 text-md sm:text-xl md:text-sm lg:text-2xl font-semibold leading-tight text-center break-words">
+                {item.title === "Trust & Security"
+                  ? (
+                    <>
+                      Trust <br /> & <br/> Security
+                    </>
+                  )
+                  : item.title}
               </span>
             </div>
           ))}

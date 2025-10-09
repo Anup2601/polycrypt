@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function OurStory() {
   return (
-    <section className="relative w-full text-white px-4 sm:px-6 md:px-10 overflow-hidden ">
+    <section className="relative w-full text-white px-4 sm:px-6 md:px-10 overflow-hidden sm:mt-24 ">
       {/* Radial gradient glow */}
       <div className="absolute top-0 left-0 w-[200px] h-[200px] bg-[radial-gradient(circle_at_top_left,_rgba(9,140,173,0.4),_transparent_50%)] blur-[300px] z-0 pointer-events-none" />
 
@@ -11,7 +11,7 @@ export default function OurStory() {
         src="/bg-texture.png"
         alt="Texture"
         fill
-        className="absolute top-0 left-0 w-full h-screen pointer-events-none z-0"
+        className="absolute top-20 left-0 w-full h-screen pointer-events-none z-0"
         priority
       />
 
@@ -28,7 +28,7 @@ export default function OurStory() {
             OUR STORY
           </h2>
 
-          <p className="text-white mt-6  text-base sm:text-2xl font-semibold leading-relaxed">
+          <p className="text-white mt-6 max-w-lg text-base sm:text-2xl font-semibold leading-relaxed">
             Polycrypt HQ is a forward-thinking product company building
             innovative blockchain-powered solutions for businesses,
             institutions, and individuals.
@@ -41,8 +41,8 @@ export default function OurStory() {
           <div className="grid md:grid-cols-2 mb-16">
             <div></div>
             <div className="flex flex-col gap-2 ">
-              <h2 className="text-6xl font-bold mb-2">01</h2>
-              <h4 className="text-4xl font-bold mb-2">Our Vision</h4>
+              <h2 className="text-4xl sm:text-6xl font-bold sm:mb-2">01</h2>
+              <h4 className="text-3xl sm:text-4xl font-bold sm:mb-2">Our Vision</h4>
               <p className="text-white text-base font-semibold leading-relaxed sm:text-2xl">
                 To build a world where digital trust is universal, empowering
                 every individual and organization with secure, transparent, and
@@ -53,9 +53,9 @@ export default function OurStory() {
 
           {/* Mission */}
           <div className="grid md:grid-cols-2">
-            <div className="flex flex-col gap-4 ">
-              <h2 className="text-6xl font-bold mb-2">02</h2>
-              <h4 className="text-4xl font-bold mb-2">Our Mission</h4>
+            <div className="flex flex-col gap-2 ">
+              <h2 className="text-4xl sm:text-6xl font-bold sm:mb-2">02</h2>
+              <h4 className="text-3xl sm:text-4xl font-bold sm:mb-2">Our Mission</h4>
               <p className="text-white font-semibold leading-relaxed text-base sm:text-2xl">
                 Our mission is to empower organizations with next-generation
                 transparency and efficiency through blockchain technology.

@@ -22,7 +22,7 @@ export default function ValuesSection() {
       <div className="flex flex-col md:flex-row justify-center items-stretch mt-12 md:mt-16 mx-4 sm:mx-8 md:mx-16 lg:mx-24 gap-6">
         {/* Left Icon */}
         <div className="flex items-center justify-center w-full md:w-1/4 border-b-2 md:border-b-0 md:border-r-2 border-white rounded-full p-4 sm:p-6 md:p-8 lg:p-10 hover:scale-95 transition-transform duration-300">
-          <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-64 lg:h-64">
+          <div className="relative w-24 h-24 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-64 lg:h-64">
             <Image
               src="/logo.svg"
               alt="Polycrypt Icon"
@@ -40,7 +40,7 @@ export default function ValuesSection() {
               key={index}
               className={`relative flex-1 flex items-center justify-center border-b-2 sm:border-r-2 sm:border-b-0 border-white rounded-full h-32 sm:h-40 md:h-[600px] bg-[#041A2F] hover:scale-95 transition-transform duration-300 p-8 sm:p-0`}
             >
-              <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-wide text-center md:-rotate-90">
+              <span className="text-2xl md:text-3xl font-bold w-full text-center md:-rotate-90  overflow-hidden text-ellipsis ">
                 {title}
               </span>
             </div>

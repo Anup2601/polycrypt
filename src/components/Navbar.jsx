@@ -26,7 +26,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center space-x-10 lg:space-x-24">
+        <div className="hidden md:flex items-center space-x-10 lg:space-x-24 transition duration-300">
           {["Home", "About Us", "Products"].map((label, index) => {
             const href =
               label === "Home"
@@ -56,15 +56,16 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden focus:outline-none text-white"
+          className="md:hidden focus:outline-none text-white transition duration-300"
         >
           {isOpen ? <X size={28} /> : <Menu size={28} />}
+          
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden mt-4 space-y-4 bg-[#0A1F33] border-t border-gray-700 pt-4 pb-6 text-center">
+        <div className="md:hidden mt-4 space-y-4 bg-[#0A1F33] border-t border-gray-700 pt-4 pb-6 text-center transition duration-300">
           {["Home", "About Us", "Products"].map((label, index) => {
             const href =
               label === "Home"
