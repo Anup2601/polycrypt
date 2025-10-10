@@ -11,11 +11,11 @@ export default function OurStory() {
       <div
         className={cn(
           "absolute inset-0 z-0",
-          "w-[150%] lg:h-[46%] md:h-[56%] h-[70%]", 
+          "w-[150%] xl:h-[46%] lg:h-[54%] md:h-[60%] h-[70%]", 
           "left-[-25%] top-[-15%]", 
           "sm:rotate-[-20deg]",
           "opacity-20",
-          "md:mt-140 mt-105",
+          "xl:mt-130 md:mt-120 mt-105",
           "sm:[background-size:25px_25px] [background-size:20px_20px]",
           "sm:[background-image:radial-gradient(#d4d4d4_2px,transparent_2px)] [background-image:radial-gradient(#d4d4d4_1px,transparent_2px)]",
         )}
@@ -36,7 +36,7 @@ export default function OurStory() {
       {/* --- Content --- */}
       <div className="relative z-10 max-w-7xl mx-auto sm:text-left text-center p-2">
         {/* Section Heading */}
-        <div className="md:mb-12 mb-24 max-w-xl">
+        <div className="lg:mb-8 md:mb-16 mb-24 max-w-xl">
           <h2
             className="text-5xl md:text-7xl lg:text-8xl font-extrabold uppercase text-transparent 
            my-12 mb-6
