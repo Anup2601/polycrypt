@@ -11,7 +11,7 @@ export default function OurStory() {
       <div
         className={cn(
           "absolute inset-0 z-0",
-          "w-[150%] xl:h-[46%] lg:h-[54%] md:h-[60%] h-[70%]", 
+          "w-[150%] xl:h-[48%] lg:h-[54%] md:h-[60%] h-[70%]", 
           "left-[-25%] top-[-15%]", 
           "sm:rotate-[-20deg]",
           "opacity-20",
