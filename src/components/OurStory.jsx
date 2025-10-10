@@ -10,12 +10,14 @@ export default function OurStory() {
       {/* Dot Pattern Background */}
       <div
         className={cn(
-          "absolute inset-0 z-0 lg:mt-40 mt-70 md:mt-60",
-          "rotate-[-15deg]", 
-          "opacity-50", 
-          "[background-size:20px_20px]", 
-          "[background-image:radial-gradient(#d4d4d4_1px,transparent_1px)]",
-          "[clip-path:polygon(0%_30%,100%_0%,100%_70%,0%_100%)]" 
+          "absolute inset-0 z-0",
+          "w-[150%] ", 
+          "left-[-25%] top-[-15%]", 
+          "sm:rotate-[-15deg]",
+          "opacity-20",
+          "md:mt-120 mt-100",
+          "sm:[background-size:25px_25px] [background-size:20px_20px]",
+          "sm:[background-image:radial-gradient(#d4d4d4_2px,transparent_2px)] [background-image:radial-gradient(#d4d4d4_1px,transparent_2px)]",
         )}
       />
 
