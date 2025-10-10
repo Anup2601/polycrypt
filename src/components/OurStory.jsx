@@ -15,7 +15,7 @@ export default function OurStory() {
           "left-[-25%] top-[-15%]", 
           "sm:rotate-[-20deg]",
           "opacity-20",
-          "xl:mt-130 md:mt-120 mt-105",
+          "xl:mt-130 md:mt-120 lg:mt-115 mt-105",
           "sm:[background-size:25px_25px] [background-size:20px_20px]",
           "sm:[background-image:radial-gradient(#d4d4d4_2px,transparent_2px)] [background-image:radial-gradient(#d4d4d4_1px,transparent_2px)]",
         )}
