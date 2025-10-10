@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
 
         {/* Center: Navigation Links */}
-        <div className="flex items-center space-x-10 md:space-x-5 lg:space-x-10 text-base lg:text-lg font-semibold">
+        <div className="flex items-center space-x-10 md:space-x-5 lg:space-x-10 text-base lg:text-lg xl:font-bold font-semibold xl:text-xl">
           <Link href="/" className="hover:text-cyan-400 transition">
             Home
           </Link>
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         {/* Right: Social Icons */}
-        <div className="flex items-center space-x-6 text-xl">
+        <div className="flex items-center space-x-6 text-xl xl:text-2xl">
           <Link href="#" className="hover:text-cyan-400 transition">
             <FiFacebook />
           </Link>

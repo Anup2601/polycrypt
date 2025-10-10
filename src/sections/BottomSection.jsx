@@ -13,8 +13,8 @@ const BottomSection = () => {
     <section className="relative w-full text-white overflow-hidden flex items-center justify-center lg-pt-20  xl:py-20">
       {/* Glow effects */}
       <div className="hidden xl:block">
-        <div className="absolute top-2/5 left-3/8 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px]" />
-        <div className="absolute top-5/8 right-5/13 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px]" />
+        <div className="absolute top-5/15 left-5/14 w-[150px] h-[150px] bg-blue-500/40 rounded-full blur-[30px]" />
+        <div className="absolute top-3/7 right-5/13 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px]" />
         <div className="absolute bottom-3/9 right-3/13 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px]" />
         <div className="absolute bottom-1/6 right-1/9 w-[150px] h-[150px] bg-blue-500/70 rounded-full blur-[30px]" />
       </div>
@@ -23,7 +23,7 @@ const BottomSection = () => {
       <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-10 md:gap-0 px-4 xl:px-8 md:px-0 lg:min-h-[380px] min-h-[300px] md:mt-32 md:mr-32">
         {/* Vertical Heading */}
         <h2
-          className={`text-5xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold uppercase text-transparent 
+          className={`text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold uppercase text-transparent 
             rotate-0 md:-rotate-90 text-center leading-tight mb-8 md:mb-0
             [text-shadow:0_0_10px_rgba(12,202,237,0.3),0_0_20px_rgba(12,202,237,0.3),0_0_40px_rgba(12,202,237,0.3)]
             [-webkit-text-stroke:1px_white]`}
@@ -53,7 +53,7 @@ const BottomSection = () => {
               <div className="absolute inset-1 bg-gradient-to-br from-cyan-300/20 to-transparent clip-hexagon" />
 
               {/* Text */}
-              <span className="relative z-10 px-1 text-md sm:text-xl  lg:text-2xl font-semibold leading-tight text-center break-words">
+              <span className="relative z-10 px-1 text-sm sm:text-xl  lg:text-2xl font-semibold leading-tight text-center break-words">
                 {item.title === "Trust & Security"
                   ? (
                     <>

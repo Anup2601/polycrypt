@@ -14,7 +14,7 @@ export default function CustomerVoices() {
            [-webkit-text-stroke:1px_white]"
           >
             Customer&nbsp;
-                <span className="hidden lg:inline"> <br /></span>
+                <span className="inline md:hidden lg:inline"><br /></span>
             Voices
           </h2>
         </div>
@@ -30,7 +30,7 @@ export default function CustomerVoices() {
               decentralized system ensures data integrity, enhances compliance,
               and builds trust across our workforce.”
             </p>
-            <p className="mt-2 text-2xl font-semibold text-[#0CCAED]">
+            <p className="mt-2 text-lg md:text-2xl font-semibold text-[#0CCAED]">
               - Garima Bhadri, HR Head, BlockSynergy Technology
             </p>
           </div>
@@ -43,7 +43,7 @@ export default function CustomerVoices() {
               secure e-signing, safe storage, and seamless access—streamlining
               workflows, saving time, and boosting collaboration.”
             </p>
-            <p className="mt-2 text-2xl font-semibold text-[#0CCAED]">
+            <p className="mt-2 text-lg md:text-2xl font-semibold text-[#0CCAED]">
               - Manavi Singhal, Founder, Ravisi
             </p>
           </div>
@@ -57,7 +57,7 @@ export default function CustomerVoices() {
               automated emails handle the rest—secure, authentic, and
               time-saving.”
             </p>
-            <p className="mt-2 text-2xl font-semibold text-[#0CCAED]">
+            <p className="mt-2 text-lg md:text-2xl font-semibold text-[#0CCAED]">
               - Sarang Pani, Founder, Inovact
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function CustomerVoices() {
               signatures is super simple. It’s fast, reliable, and gives us
               peace of mind!”
             </p>
-            <p className="mt-2 text-2xl font-semibold text-[#0CCAED]">
+            <p className="mt-2 text-lg md:text-2xl font-semibold text-[#0CCAED]">
               - Vivek Mehta, Founder, Pixel(n)Path
             </p>
           </div>

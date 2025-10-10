@@ -3,14 +3,14 @@
 import Image from "next/image";
 
 export default function ValuesSection() {
-  const values = ["Integrity", "Innovation", "Security", "Customer-Centric"];
+  const values = ["Integrity", "Innovation", "Security", "Client-First"];
 
   return (
     <section className="relative w-full text-white overflow-hidden mb-16">
       {/* Title */}
       <div className="flex justify-center items-center pt-16">
         <h1
-          className={`text-5xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold uppercase text-transparent text-center
+          className={`text-5xl md:text-7xl lg:text-8xl font-extrabold uppercase text-transparent text-center xl:mb-28 md:mb-20
           [text-shadow:0_0_10px_rgba(12,202,237,0.3),0_0_20px_rgba(12,202,237,0.3),0_0_40px_rgba(12,202,237,0.3)]
           [-webkit-text-stroke:1px_white]`}
         >
@@ -38,9 +38,9 @@ export default function ValuesSection() {
           {values.map((title, index) => (
             <div
               key={index}
-              className={`relative flex-1 flex items-center justify-center border-b-2 sm:border-r-2 sm:border-b-0 border-white rounded-full h-32 sm:h-40 lg:h-[450px] md:h-[400px] xl:h-[550px] bg-[#041A2F] hover:scale-95 transition-transform duration-300 p-8 sm:p-0`}
+              className={`relative flex-1 flex items-center justify-center border-b-2 sm:border-r-2 sm:border-b-0 border-white rounded-full h-32 sm:h-40 lg:h-[500px] md:h-[400px] xl:h-[550px] bg-[#041A2F] hover:scale-95 transition-transform duration-300 p-8 sm:p-0`}
             >
-              <span className="text-2xl md:text-3xl  font-bold w-full text-center md:-rotate-90  overflow-hidden text-ellipsis ">
+              <span className="text-2xl lg:text-3xl  font-bold w-full text-center md:-rotate-90  overflow-hidden text-ellipsis ">
                 {title}
               </span>
             </div>
