@@ -10,7 +10,7 @@ export default function OurStory() {
       {/* Dot Pattern Background */}
       <div
         className={cn(
-          "absolute inset-0 z-0 mt-40",
+          "absolute inset-0 z-0 lg:mt-40 mt-70 md:mt-60",
           "rotate-[-15deg]", 
           "opacity-50", 
           "[background-size:20px_20px]", 
