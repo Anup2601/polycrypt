@@ -6,16 +6,16 @@ import { cn } from "@/lib/utils";
 
 export default function OurStory() {
   return (
-    <section className="relative w-full text-white px-4 sm:px-6 md:px-10 overflow-hidden sm:mt-24">
+    <section className="relative w-full text-white px-4 sm:px-6 md:px-10 overflow-hidden sm:mt-24 xl:pb-48 md:pb-28">
       {/* Dot Pattern Background */}
       <div
         className={cn(
           "absolute inset-0 z-0",
-          "w-[150%] ", 
+          "w-[150%] lg:h-[52%] md:h-[56%] h-[70%]", 
           "left-[-25%] top-[-15%]", 
-          "sm:rotate-[-15deg]",
+          "sm:rotate-[-20deg]",
           "opacity-20",
-          "md:mt-120 mt-100",
+          "md:mt-120 mt-110",
           "sm:[background-size:25px_25px] [background-size:20px_20px]",
           "sm:[background-image:radial-gradient(#d4d4d4_2px,transparent_2px)] [background-image:radial-gradient(#d4d4d4_1px,transparent_2px)]",
         )}

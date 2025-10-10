@@ -8,7 +8,7 @@ export default function ValuesSection() {
   return (
     <section className="relative w-full text-white overflow-hidden mb-16">
       {/* Title */}
-      <div className="flex justify-center items-center pt-16">
+      <div className="flex justify-center items-center sm:pt-4 pt-16">
         <h1
           className={`text-5xl md:text-7xl lg:text-8xl font-extrabold uppercase text-transparent text-center xl:mb-28 md:mb-20
           [text-shadow:0_0_10px_rgba(12,202,237,0.3),0_0_20px_rgba(12,202,237,0.3),0_0_40px_rgba(12,202,237,0.3)]
